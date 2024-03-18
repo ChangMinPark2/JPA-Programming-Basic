@@ -17,3 +17,5 @@ A
 ex1-hello-jpa.iml,8/8/881759f341a096fb2db3afa0d6e5ede1098681c0
 R
 "src/main/java/hellojpa/Member.java,f/d/fd68fd8c0388b07c61445afa503c8ec018eab4c0
+T
+$src/main/java/hellojpa/RoleType.java,e/1/e151b821dadfe54a14fa67f5f3fe359bdad10ecc
