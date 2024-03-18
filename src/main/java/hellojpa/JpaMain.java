@@ -1,6 +1,9 @@
 package hellojpa;
 
-import jakarta.persistence.*;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.EntityTransaction;
+import jakarta.persistence.Persistence;
 
 public class JpaMain {
 
@@ -8,9 +11,25 @@ public class JpaMain {
 
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");
         EntityManager em = emf.createEntityManager();
-        //code
+        EntityTransaction tx = em.getTransaction();
+        tx.begin();
 
-        em.close();
+        try {
+            Member member = new Member();
+            member.setId(100L);
+            member.setName("HelloA");
+            // 여기까지 비영속 상태
+
+            em.persist(member);
+            // 영속 상태
+
+            tx.commit();
+            //DB에 쿼리가 나가는 시점
+        } catch (Exception e) {
+            tx.rollback();
+        } finally {
+            em.close();
+        }
         emf.close();
     }
 }
