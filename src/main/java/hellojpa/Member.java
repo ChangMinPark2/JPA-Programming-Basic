@@ -6,6 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToOne;
 
 @Entity
 public class Member {
@@ -15,11 +16,16 @@ public class Member {
 	@Column(name = "MEMBER_ID")
 	private Long id;
 
-	private String userName;
-
 	@ManyToOne
 	@JoinColumn(name = "TEAM_ID")
 	private Team team;
+
+	@OneToOne
+	@JoinColumn(name = "LOCKER_ID")
+	private Locker locker;
+
+	private String userName;
+
 
 	public Long getId() {
 		return id;

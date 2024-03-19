@@ -17,21 +17,13 @@ A
 ex1-hello-jpa.iml,8/8/881759f341a096fb2db3afa0d6e5ede1098681c0
 R
 "src/main/java/hellojpa/Member.java,f/d/fd68fd8c0388b07c61445afa503c8ec018eab4c0
-T
-$src/main/java/hellojpa/RoleType.java,e/1/e151b821dadfe54a14fa67f5f3fe359bdad10ecc
 w
 G.idea/sonarlint/issuestore/2/c/2cabb939da04d3de3a200bf2b575690e1a16316d,1/0/10f2119b18de4c2d93011c2acd27301df22c2983
 w
 G.idea/sonarlint/issuestore/3/3/33dcbf48de9d8bcc160be4f65778e972c661e0d4,c/5/c5893507cd6e0181450b9a18e843731c4dc9cf31
-Y
-)src/main/java/hellojpa/domain/Member.java,d/c/dc537b37026ee91631de010946451a6a3390d73a
-Q
-!src/main/java/hellojpa/Order.java,0/b/0b49f9c4bbe01ecb97ad5370c8dd46254fe6ba20
-W
-'src/main/java/hellojpa/OrderStatus.java,1/1/11eb46853b0e27e69368752b499c71a779832b92
-P
- src/main/java/hellojpa/Item.java,9/7/978a85b417eb31c6aef1282acb782910acfded2c
-U
-%src/main/java/hellojpa/OrderItem.java,a/1/a1a1aac00431ccaf641fd12a3d67ca01ab995aba
 P
  src/main/java/hellojpa/Team.java,b/f/bfbac6fbffe19ced8136bfd2d23bf11518635622
+P
+ src/main/java/hellojpa/Test.java,4/3/4319940420dac74eb08bdd332a143d0b2eae69e8
+R
+"src/main/java/hellojpa/Locker.java,4/7/4746643b525b7683f7bd87c9f4f12112f1a6193f
