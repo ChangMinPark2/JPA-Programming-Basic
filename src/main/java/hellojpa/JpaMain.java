@@ -16,20 +16,26 @@ public class JpaMain {
 		tx.begin();
 
 		try {
+			Team team = new Team();
+			team.setName("hi");
+
 			Member member = new Member();
 			member.setUserName("userA");
-
+			member.setTeam(team);
 			em.persist(member);
 
 			em.flush();
 			em.clear();
 
-			// Member findMember = em.find(Member.class, member.getId());
-			Member findMember = em.getReference(Member.class, member.getId());
+			Member findMember = em.find(Member.class, member.getId());
 
-			System.out.println("before findMember = " + findMember.getClass());
-			System.out.println("findMember = " + findMember.getUserName());
-			System.out.println("after findMember = " + findMember.getClass());
+			System.out.println("---------findMember = " + findMember.getTeam().getClass());
+			System.out.println("zwedqewdqdqdqwdq");
+			// Member findMember = em.getReference(Member.class, member.getId());
+			//
+			// System.out.println("before findMember = " + findMember.getClass());
+			// System.out.println("findMember = " + findMember.getUserName());
+			// System.out.println("after findMember = " + findMember.getClass());
 
 			tx.commit();
 			//DB에 쿼리가 나가는 시점
