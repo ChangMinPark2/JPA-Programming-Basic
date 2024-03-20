@@ -1,5 +1,10 @@
 
-m	java:S106$"+Replace this use of System.out by a logger.(ùí²Ã8üÏ…“å1J$1c53459e-fefd-4604-a328-3c864f78bcbe
-~	java:S1253"<This block of commented-out lines of code should be removed.(Ä°µƒ8ıÏ…“å1J$2bfe3774-c3b9-4417-91f1-e8bfb9861fb9
-~	java:S1258"<This block of commented-out lines of code should be removed.(”áÿ¬8ıÏ…“å1J$253edadc-3ee6-4439-9a00-ebfe907449d1
-ƒ	java:S125B"<This block of commented-out lines of code should be removed.(¬áŒıÿÿÿÿ8şÏ…“å1J$37cc6edf-0b88-4fb9-86af-868f051532b6
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(×çÆØşÿÿÿÿ8¦òßÌå1J$fdf775a7-d936-4194-ae46-6b66fb25f190
+l	java:S106"+Replace this use of System.out by a logger.(ÁÁX8ú”¡Ìå1J$ea60ebc7-f212-4753-80b9-82e9f7a00bd8
+m	java:S106"+Replace this use of System.out by a logger.(İõø8À†©Ìå1J$745941e8-36bd-4e65-8b56-bb18541a92c8
+r	java:S106 "+Replace this use of System.out by a logger.(æã‚üÿÿÿÿ8Ğ½æÌå1J$2bfbb314-9a80-45fd-b7b6-64ba1e87cb83
+~	java:S125,"<This block of commented-out lines of code should be removed.(Ä°µƒ8â—Ìå1J$3182bbd3-7161-4ad8-99b9-8c668b22046a
+~	java:S1251"<This block of commented-out lines of code should be removed.(”áÿ¬8â—Ìå1J$d03f917e-a6ce-4eb3-84b8-3fbc2bfc4027
+ƒ	java:S125:"<This block of commented-out lines of code should be removed.(¬áŒıÿÿÿÿ8â—Ìå1J$e71b0068-2c07-40aa-8ca3-0a271bfc290f
+s
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8Ûõ¡Ìå1J$8ded6f90-21bb-4069-9d1f-6c4c46701a8d

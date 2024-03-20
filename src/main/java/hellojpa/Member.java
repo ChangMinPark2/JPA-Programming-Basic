@@ -15,15 +15,6 @@ public class Member {
 	@GeneratedValue
 	@Column(name = "MEMBER_ID")
 	private Long id;
-
-	@ManyToOne
-	@JoinColumn(name = "TEAM_ID")
-	private Team team;
-
-	@OneToOne
-	@JoinColumn(name = "LOCKER_ID")
-	private Locker locker;
-
 	private String userName;
 
 
@@ -43,13 +34,6 @@ public class Member {
 		this.userName = userName;
 	}
 
-	public Team getTeam() {
-		return team;
-	}
-
-	public void setTeam(Team team) {
-		this.team = team;
-	}
 
 }
 
