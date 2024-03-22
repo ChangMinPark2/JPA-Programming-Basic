@@ -17,13 +17,13 @@ public class Member {
 	@Column(name = "MEMBER_ID")
 	private Long id;
 
+	//다대일 관계는 무조건 지연로딩.
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "TEAM_ID")
 	private Team team;
 
-
 	private String userName;
-
+	private int age;
 
 	public Long getId() {
 		return id;
@@ -31,14 +31,6 @@ public class Member {
 
 	public void setId(Long id) {
 		this.id = id;
-	}
-
-	public String getUserName() {
-		return userName;
-	}
-
-	public void setUserName(String userName) {
-		this.userName = userName;
 	}
 
 	public Team getTeam() {
@@ -49,5 +41,20 @@ public class Member {
 		this.team = team;
 	}
 
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
 }
 
