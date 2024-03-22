@@ -27,6 +27,7 @@ public class JpaMain {
 			em.flush();
 			em.clear();
 
+			// "select m from Member m, Team t where m.username = t.teamname"
 			Member findMember = em.find(Member.class, member.getId());
 
 			System.out.println("---------findMember = " + findMember.getTeam().getClass());
