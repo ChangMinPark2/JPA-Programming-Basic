@@ -6,6 +6,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
+import jakarta.persistence.Query;
 
 public class JpaMain {
 	public static void main(String[] args) {
@@ -27,10 +28,10 @@ public class JpaMain {
 			em.flush();
 			em.clear();
 
-			// "select m from Member m, Team t where m.username = t.teamname"
-			Member findMember = em.find(Member.class, member.getId());
+			String query = "select m from Member m left join m.team t on t.name = 'teamA'";
+			List<Member> result = em.createQuery(query, Member.class).getResultList();
 
-			System.out.println("---------findMember = " + findMember.getTeam().getClass());
+			// System.out.println("---------findMember = " + findMember.getTeam().getClass());
 			System.out.println("zwedqewdqdqdqwdq");
 			// Member findMember = em.getReference(Member.class, member.getId());
 			//
