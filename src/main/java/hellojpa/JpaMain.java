@@ -28,7 +28,7 @@ public class JpaMain {
 			em.flush();
 			em.clear();
 
-			String query = "select m from Member m left join m.team t on t.name = 'teamA'";
+			String query = "select m from Member m left join fetch m.team t on t.name = 'teamA'";
 			List<Member> result = em.createQuery(query, Member.class).getResultList();
 
 			// System.out.println("---------findMember = " + findMember.getTeam().getClass());
